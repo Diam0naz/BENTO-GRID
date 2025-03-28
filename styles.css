@@ -1,0 +1,218 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --clr-Purple-100: hsl(254, 88%, 90%);
+  --clr-Purple-500: #7650dc;
+
+  --clr-Yellow-100: hsl(31, 66%, 93%);
+  --clr-Yellow-500: hsl(36, 100%, 83.3%);
+
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Black: hsl(0, 0%, 7%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+#container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(172, 165, 156);
+}
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  width: 80%;
+  height: 95%;
+  background-color:cornsilk;
+}
+img {
+  max-width: 80%;
+  display: block;
+}
+.bento-grid-item {
+  margin: 10px 10px;
+}
+
+/* <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Coded Joshua</a>.
+    </div> */
+.create {
+  background-color: var(--clr-Yellow-100);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+}
+.content {
+  background-color: var(--clr-Yellow-500);
+  display: flex;
+  gap: 0.9rem;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+}
+.media {
+  background-color: var(--clr-Purple-500);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+}
+.manage {
+  background-color: var(--clr-White);
+  display: flex;
+  gap: 0.9rem;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+}
+.posting {
+  background-color: var(--clr-Yellow-500);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 0.9rem;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+}
+.schedule {
+  background-color: var(--clr-Purple-100);
+  display: flex;
+  gap: 0.9rem;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+  z-index: +1;
+}
+.audience {
+  background-color: var(--clr-White);
+  display: flex;
+  gap: 0.9rem;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+}
+.followers {
+  background-color: var(--clr-Purple-500);
+  display: flex;
+  gap: 0.9rem;
+  padding: 5px;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* layout styles */
+.bento-grid-container {
+  display: grid;
+  grid-template-rows: 11.5rem 11.5rem 11.5rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  max-width: 60rem;
+  gap: 1rem;
+  margin-inline: auto;
+  grid-template-areas:
+    "column1 column2 column3"
+    "column1 column2 column3"
+    "column1 column4 column4";
+}
+.bento-grid-container > *,
+.inside-element {
+  display: grid;
+  gap: 1rem;
+}
+.inside-element {
+  grid-template-columns: 1fr 1fr;
+  gap: 2fr;
+}
+.column-one {
+  grid-area: column1;
+}
+.column-two {
+  grid-area: column2;
+}
+.column-three {
+  grid-area: column3;
+}
+.column-four {
+  grid-area: column4;
+}
+
+.inside-element:nth-child(1) {
+  grid-template-columns: 0.95fr 2fr;
+}
+
+@media screen and (max-width: 650px) {
+  .bento-grid-container {
+    grid-template-rows: 13rem 13rem 13rem 13rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "column2 column3"
+      "column2 column3"
+      "column4 column4"
+      "column1 column1";
+  }
+  .column-one {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.bento-grid-item-element {
+  border-radius: 0.5rem;
+}
+
+.column-four > .inside-element > .followers > img {
+  width: 200px;
+  object-fit: cover;
+}
+.column-four > .inside-element > .audience > img {
+  width: 200px;
+  object-fit:fill;
+  height: 70px;
+  margin-top: 2.5rem;
+}
+
+.column-one > .create > span{
+  font-size:x-large;
+  margin-top: 2rem;
+}
+.column-three > .schedule > img{
+  width: 240px;
+  height: 200px;
+  object-fit: fill;
+  margin-left: 60px;
+}
+.column-four > .inside-element > .followers > h2{
+  color: white;
+  font-size:xx-large;
+}
